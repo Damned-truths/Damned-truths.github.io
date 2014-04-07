@@ -223,6 +223,7 @@ figure + figure {
 
 #navpanel li a:hover {
     background:rgb(0,0,250);
+    padding: 1px;
     #border-radius: 5px 5px 5px 5px;
 }
 /**/
