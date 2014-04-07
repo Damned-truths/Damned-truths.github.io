@@ -1,0 +1,241 @@
+﻿html {
+    background: rgb(0,0,100);
+}
+/**/
+h1 {
+    font-family: Arial, sans-serif
+}
+/**/
+#logo {
+    max-width: 720px;
+    height: 89px;
+    padding: 0px;
+    border-radius: 10px;
+    background-image: url("/images/logo.JPG");
+}
+#logo  a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-decoration:none;
+    color: rgb(38,38,38);
+}
+
+#maintitle {
+    font-size: 40pt;
+    margin: 0 auto;
+    text-align: left;
+    font-style:italic;
+    font-weight: bold;
+    font-family:Arial;
+}
+
+#slogan {
+    font-size: 12pt;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    font-style:italic;
+    font-weight: bold;
+    font-family:Arial;
+}
+/**/
+a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/**/
+.breadcrumbs {
+    list-style: none;
+    padding: 2px 10px;
+    margin: -15px;
+    height: 20px;
+}
+
+.breadcrumbs li {
+    display: inline;
+    color: black;
+}
+/**/
+.smlist {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    /*border-left: 1px solid black;*/
+}
+/**/
+li {
+    list-style:disc;
+}
+
+li li {
+    list-style:disc;
+}
+
+li li li {
+    list-style:disc;
+}
+/**/
+.indent {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+/**/
+.wrapper {
+    max-width: 700px;
+    text-align: left;
+    margin: 0px auto;
+    padding: 2px 10px;
+    background: rgb(120,120,255);
+    border-radius: 0px;
+}
+
+.wrapper + .wrapper {
+    margin-top: 5px;
+}
+
+#wrappermenu a {
+    margin: 0 0.2em;
+}
+
+#wrappercopyright {
+    padding: 2px 10px;
+}
+/**/
+.headerlink {
+    text-decoration: none;
+}
+
+.headerlink:hover {
+    color: black;
+}
+/**/
+.photo {
+    border:1px black solid;
+    width:100%;
+}
+
+.landscape-photo {
+    cursor: pointer;
+}
+
+/*.landscape-photo:hover, 
+.landscape-photo:target*/ 
+.landscape-photo.large-photo {
+    width: 150%;
+    margin-left: -25%;
+}
+
+.portrait-photo {
+}
+
+/**/
+.index {
+    list-style: none;
+}
+
+.indexlist {
+    font-size: 15pt;
+    font-weight: bold;
+    list-style: none;
+}
+
+.indexlist:hover {
+    font-size: 15pt;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+/**/
+#frontpage {
+    font-size: 18pt;
+}
+/**/
+h2 {
+    font-family: Arial, sans-serif
+}
+/**/
+.division {
+    border:1px black solid;
+}
+/**/
+figure {
+    margin:0;
+    margin-top:20px;
+}
+
+#jekyll {
+    text-align:right;
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 3px;
+    color: grey;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/*
+#lastEdit {
+    text-align:left;
+    max-width: 200px;
+    margin-left: 500px;
+    margin: 0px auto;
+    padding: 3px;
+    color: grey;
+}
+*/
+/* Just for reference :)
+
+figure:not(:last-child) {
+    margin-bottom:40px;
+}
+
+figure:not(:first-child) {
+    margin-top:40px;
+}
+
+figure + figure {
+    margin-top:20px;
+}*/
+
+#navpanel {
+    margin: 0 0.2em;
+    padding:0;
+    width:700px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#navpanel li {
+    display:inline;
+    
+}
+
+#navpanel li a {
+    text-decoration:none;
+    color: rgb(200,200,200);
+    text-align:center;
+    width: 100px;
+    height: 100px;
+}
+
+#navpanel li a:hover {
+    background:rgb(0,0,250);
+    border-radius: 5px 5px 5px 5px;
+}
+/**/
+.month {
+    font-weight: bold;
+}
+/**/
+.title {
+    padding: 0;
+    margin: 0 auto;
+}
+/**/
+.itemborder {
+    border: 1px solid white;
+    border-radius: 5px;
+}
