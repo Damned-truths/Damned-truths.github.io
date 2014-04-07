@@ -10,7 +10,7 @@ h1 {
     max-width: 720px;
     height: 89px;
     padding: 0px;
-    border-radius: 10px;
+    #border-radius: 10px;
     background-image: url("/images/logo.JPG");
 }
 #logo  a {
@@ -174,7 +174,7 @@ figure {
     margin: 0px auto;
     padding: 3px;
     color: grey;
-    border-radius: 0px 0px 10px 10px;
+    #border-radius: 0px 0px 10px 10px;
 }
 
 /*
@@ -223,7 +223,7 @@ figure + figure {
 
 #navpanel li a:hover {
     background:rgb(0,0,250);
-    border-radius: 5px 5px 5px 5px;
+    #border-radius: 5px 5px 5px 5px;
 }
 /**/
 .month {
