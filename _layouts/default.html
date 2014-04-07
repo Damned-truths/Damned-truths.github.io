@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }} | Photoby</title>
+    <title>{{ page.title }}</title>
     <link href="/photo-style.css" rel="stylesheet" type="text/css" media="all">  
     <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
-    <div class="wrapper">
+    <div id="top" class="wrapper">
         <ul id="navpanel">
             <li><a accesskey="0" href="/">Home</a></li>
             <li>|</li>
-            <li><a accesskey="1" href="/photos/">Photos</a></li>
+            <li><a accesskey="1" href="/photography/">Photography</a></li>
             <li>|</li>
-            <li><a accesskey="2" href="/projects/">Projects</a></li>
+            <li><a accesskey="2" href="/orienteering/">Orienteering</a></li>
             <li>|</li>
             <li><a accesskey="3" href="/about/">About</a></li>
             <li>|</li>
@@ -24,8 +24,8 @@
         </ul>
     </div>
     <div class="wrapper" id="logo">
-        <a href="/"><p id="slogan">Photography - with an edge</p>
-        <p id="maintitle">PHOTOBY</p></a>
+        <a href="/"><p id="slogan"></p>
+        <p id="maintitle"></p></a>
     </div>
     <div id="wrapperbreadcrumbs" class="wrapper">
     <!--{% capture url_parts %} {{ page.url | remove: "/index.html" | remove: ".html" | replace:'/'," " }}{% endcapture %}
@@ -70,9 +70,9 @@
         <h1 class="title">{{ page.title }}</h1>
         {{ content }}
     </div>
-	 <div class="wrapper">
+	 <!-- <div class="wrapper">
  <a href="http://stackexchange.com/users/1614642/damned-truths"><img src="http://stackexchange.com/users/flair/1614642.png" width="208" height="58" alt="profile for damned truths on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for damned truths on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
- </div>
+ </div> -->
     <div class="wrapper" id="wrappercopyright">
         <div>@copy; Copyright 2012 Toben Wilson - All Rights Reserved</div>
     </div>
