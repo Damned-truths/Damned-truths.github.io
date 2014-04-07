@@ -239,3 +239,7 @@ figure + figure {
     border: 1px solid white;
     border-radius: 5px;
 }
+
+#top {
+    border-radius: 10px;
+}
