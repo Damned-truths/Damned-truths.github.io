@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(105,105,105);
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.fixed {
+    position: fixed;
+    
+}
+
+.content {
+    width: 750px;
+    margin: 0 auto;
+    background-color: rgb(245,219,202);
+    padding-top: 5px;
+}
+
+#header {
+    max-width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    #margin-top: 5px;
+}
+
+.nav-bar-item:hover {
+    background-color: rgb(230,230,230);
+    width: 90px;
+}
+
+#nav-bar { 
+    background-color: rgb(81,147,171);
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-bar-item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+#bread-crumbs {
+    margin: auto;
+    width: 750px;
+    background-color: rgb(81,147,171);
+    text-indent: 10px;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 3px;
