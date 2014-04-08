@@ -150,6 +150,17 @@ li li li {
     text-decoration: none;
     list-style: none;
 }
+
+#frontsublink {
+    font-weight: bold;
+    list-style: none;
+}
+
+#frontsublink:hover{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
 /**/
 #frontpage {
     font-size: 18pt;
