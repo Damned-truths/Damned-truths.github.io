@@ -216,8 +216,8 @@ figure + figure {
     margin: 0 0.2em;
     padding:0;
     width:100px;
-    border-radius: 0px 0px 0px 0px;
-    background-color: (81,147,171);
+    border-radius: 0px;
+    background-color: rgb(81,147,171);
 }
 
 #navpanel li {    
