@@ -217,6 +217,7 @@ figure + figure {
     padding:0;
     width:100px;
     border-radius: 0px 0px 0px 0px;
+    background-color: (81,147,171);
 }
 
 #navpanel li {    
@@ -252,5 +253,4 @@ figure + figure {
 
 #top {
     position: fixed;
-    background-color: (81,147,171);
 }
