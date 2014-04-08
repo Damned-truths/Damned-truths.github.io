@@ -159,7 +159,6 @@ li li li {
 #frontsublink:hover{
     color: black;
     text-decoration: none;
-    list-style: none;
 }
 /**/
 #frontpage {
@@ -229,6 +228,7 @@ figure + figure {
     padding: 1px;
     padding-left: 5px;
     border-radius: 10px;
+    border: 1px white solid;
 }
 
 .navitem:hover {
