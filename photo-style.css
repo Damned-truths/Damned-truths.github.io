@@ -225,16 +225,23 @@ figure + figure {
     color: rgb(200,200,200);
     text-align:left;
     width: 130px;
-    height: 30px;
+    height: 25px;
     padding: 1px;
-    #margin-left: -20px;
 }
 
 .navitem:hover {
-    background-color:rgb(0,0,250);
+    text-decoration: none;
+    background-color: rgb(0,0,250);
     #border-radius: 5px 5px 5px 5px;
 }
 
+.navlink {
+    text-decoration: none;
+}
+
+.navlink:hover {
+    text-decoration: none;
+}
 /**/
 .month {
     font-weight: bold;
