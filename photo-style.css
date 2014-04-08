@@ -220,11 +220,7 @@ figure + figure {
     background-color: rgb(81,147,171);
 }
 
-.navpanel li {
-        list-style: none;
-}
-
-.navitem li a {
+.navitem {
     text-decoration:none;
     color: rgb(200,200,200);
     text-align:left;
@@ -234,7 +230,7 @@ figure + figure {
     #margin-left: -20px;
 }
 
-.navitem li a:hover {
+.navitem:hover {
     background-color:rgb(0,0,250);
     #border-radius: 5px 5px 5px 5px;
 }
