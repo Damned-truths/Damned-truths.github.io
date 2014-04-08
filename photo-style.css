@@ -216,7 +216,6 @@ figure + figure {
     padding:0;
     width:130px;
     border-radius: 10px;
-    
 }
 
 .navitem {
@@ -229,13 +228,13 @@ figure + figure {
     padding: 1px;
     padding-left: 5px;
     border-radius: 10px;
-    border: 1px white solid;
+    border: 1px rgb(0,0,250) solid;
 }
 
 .navitem:hover {
     text-decoration: none;
     background-color: rgb(0,0,250);
-    border: 1px black solid;
+    border: 1px rgb(81,147,171) solid;
     #border-radius: 5px 5px 5px 5px;
 }
 
@@ -257,11 +256,11 @@ figure + figure {
 }
 /**/
 .itemborder {
-    border: 1px solid white;
+    border: 1px white solid;
     border-radius: 5px;
 }
 
 #top {
     position: fixed;
-    background-color: rgb(81,147,171);
+    #background-color: rgb(81,147,171);
 }
