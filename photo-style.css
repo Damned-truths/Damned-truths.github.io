@@ -227,15 +227,15 @@ figure + figure {
 .navitem li a {
     text-decoration:none;
     color: rgb(200,200,200);
-    text-align:center;
-    width: 130px;
+    text-align:left;
+    width: 100px;
     height: 30px;
     padding: 1px;
-    margin-left: -15px;
+    #margin-left: -20px;
 }
 
 .navitem li a:hover {
-    background:rgb(0,0,250);
+    background-color:rgb(0,0,250);
     #border-radius: 5px 5px 5px 5px;
 }
 
