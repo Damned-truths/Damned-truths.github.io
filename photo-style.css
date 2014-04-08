@@ -215,13 +215,11 @@ figure + figure {
 #navpanel {
     margin: 0 0.2em;
     padding:0;
-    width:700px;
-    border-radius: 10px 10px 0px 0px;
+    width:100px;
+    border-radius: 0px 0px 0px 0px;
 }
 
-#navpanel li {
-    display:inline;
-    
+#navpanel li {    
 }
 
 #navpanel li a {
@@ -250,4 +248,8 @@ figure + figure {
 .itemborder {
     border: 1px solid white;
     border-radius: 5px;
+}
+
+#top {
+    position: fixed;
 }
