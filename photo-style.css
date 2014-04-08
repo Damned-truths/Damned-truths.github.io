@@ -224,7 +224,7 @@ figure + figure {
     text-decoration:none;
     color: rgb(200,200,200);
     text-align:left;
-    width: 100px;
+    width: 130px;
     height: 30px;
     padding: 1px;
     #margin-left: -20px;
@@ -235,6 +235,9 @@ figure + figure {
     #border-radius: 5px 5px 5px 5px;
 }
 
+.navlink {
+    text-decoration: none;
+}
 /**/
 .month {
     font-weight: bold;
