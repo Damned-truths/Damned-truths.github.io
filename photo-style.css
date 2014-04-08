@@ -215,27 +215,29 @@ figure + figure {
 .navpanel {
     margin: 0 0.2em;
     padding:0;
-    width:100px;
+    width:130px;
     border-radius: 0px;
     background-color: rgb(81,147,171);
 }
 
-.navpanel li {    
+.navpanel li {
+        list-style: none;
 }
 
-.navpanel li a {
+.navitem li a {
     text-decoration:none;
     color: rgb(200,200,200);
     text-align:center;
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 30px;
     padding: 1px;
 }
 
-.navpanel li a:hover {
+.navitem li a:hover {
     background:rgb(0,0,250);
     #border-radius: 5px 5px 5px 5px;
 }
+
 /**/
 .month {
     font-weight: bold;
