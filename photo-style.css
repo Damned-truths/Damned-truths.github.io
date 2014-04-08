@@ -231,6 +231,7 @@ figure + figure {
     width: 130px;
     height: 30px;
     padding: 1px;
+    margin-left: -15px;
 }
 
 .navitem li a:hover {
