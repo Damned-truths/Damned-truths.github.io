@@ -212,7 +212,7 @@ figure + figure {
     margin-top:20px;
 }*/
 
-#navpanel {
+.navpanel {
     margin: 0 0.2em;
     padding:0;
     width:100px;
@@ -220,10 +220,10 @@ figure + figure {
     background-color: rgb(81,147,171);
 }
 
-#navpanel li {    
+.navpanel li {    
 }
 
-#navpanel li a {
+.navpanel li a {
     text-decoration:none;
     color: rgb(200,200,200);
     text-align:center;
@@ -232,7 +232,7 @@ figure + figure {
     padding: 1px;
 }
 
-#navpanel li a:hover {
+.navpanel li a:hover {
     background:rgb(0,0,250);
     #border-radius: 5px 5px 5px 5px;
 }
@@ -253,4 +253,5 @@ figure + figure {
 
 #top {
     position: fixed;
+    background-color: rgb(81,147,171);
 }
