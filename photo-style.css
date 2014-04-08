@@ -1,5 +1,5 @@
 ﻿html {
-    background: rgb(0,0,100);
+    background: rgb(105,105,105);
 }
 /**/
 h1 {
@@ -89,7 +89,7 @@ li li li {
     text-align: left;
     margin: 0px auto;
     padding: 2px 10px;
-    background: rgb(120,120,255);
+    background: rgb(81,147,171);
     border-radius: 0px;
 }
 
@@ -252,4 +252,5 @@ figure + figure {
 
 #top {
     position: fixed;
+    background-color: (81,147,171);
 }
