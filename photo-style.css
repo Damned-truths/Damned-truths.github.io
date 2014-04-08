@@ -263,3 +263,8 @@ figure + figure {
     position: fixed;
     background-color: rgb(81,147,171);
 }
+
+#bottom {
+    position: fixed;
+    margin-bottom: 5px;
+}
