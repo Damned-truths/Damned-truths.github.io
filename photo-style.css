@@ -67,18 +67,6 @@ a:hover {
     /*border-left: 1px solid black;*/
 }
 /**/
-li {
-    list-style:disc;
-}
-
-li li {
-    list-style:disc;
-}
-
-li li li {
-    list-style:disc;
-}
-/**/
 .indent {
     margin-left: 1em;
     margin-bottom: 1em;
