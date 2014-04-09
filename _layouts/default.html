@@ -19,7 +19,7 @@
             <ul>
                 {% for post in site.posts do %}
                 <li>
-                    {{ post.date }} <a href="{{ post.url }}">{{ post.title }}</a>
+                    <div class="navitem">{{ post.date }} <a href="{{ post.url }}">{{ post.title }}</a></div>
                 </li>
                 {% endfor %}
             </ul>
