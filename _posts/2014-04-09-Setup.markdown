@@ -3,4 +3,4 @@ layout: default
 title: setup
 ---
 
-hello world
+<img src="/images/_mg_1238.jpg"/>
