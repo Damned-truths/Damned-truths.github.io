@@ -47,7 +47,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: black;
 }
 /**/
 .breadcrumbs {
@@ -253,4 +254,30 @@ figure + figure {
 #top {
     position: fixed;
     #background-color: rgb(81,147,171);
+}
+
+#posts {
+    position: fixed;
+    
+    list-style: none;
+}
+
+#poststitle {
+    width: 200px;
+    background-color: rgb(81,147,171);
+    border-radius: 10px;
+    height: 25px;
+    margin-top: 5px;
+    border: 1px rgb(50,50,50) solid;
+    padding: 1px 1px 1px 5px;
+    font-weight: bold;
+}
+
+.posts {
+    width: 200px;
+    background-color: rgb(81,147,171);
+    border-radius: 10px;
+    height: 25px;
+    border: 1px rgb(50,50,50) solid;
+    padding: 1px 1px 1px 5px;
 }

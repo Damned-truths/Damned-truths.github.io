@@ -15,10 +15,14 @@
             <a accesskey="4" class="navlink" href="/contact/"><div class="navitem">Contact</div></a>
             <a accesskey="8" class="navlink" href="/accesskeys/"><div class="navitem">Access Keys</div></a>
             <a accesskey="9" class="navlink" href="/sitemap/"><div class="navitem">Sitemap</div></a>
-            
-
-        
+        <div id="posts">
+            <div id="poststitle">Posts</div>
+                {% for post in site.posts limit:10 %}
+                        <a href="{{ post.url }}"><div class="posts" >{{ post.title }}</div></a>
+                {% endfor %}
+        </div>
     </div>
+    
     <div class="wrapper" id="logo">
         <a href="/"><p id="slogan">Because What is True?</p>
         <p id="maintitle">Damned Truths</p></a>
