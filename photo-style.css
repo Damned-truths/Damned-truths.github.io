@@ -219,6 +219,7 @@ figure + figure {
     border-radius: 10px;
     font-family: arial;
     font-weight: bold;
+    border: 1px rgb(50,50,50) solid;
 }
 
 .navitem:hover {

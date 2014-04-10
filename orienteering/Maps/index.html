@@ -1,6 +1,12 @@
 ---
-layout: gallery
-title: Maps | Orienteering
+layout: default
+title: Maps
 ---
 
-<p>Below are maps the I feel like sharing</p>
+<ul>
+  {% for post in site.posts do %}
+  <li>
+    {{ post.date }} <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

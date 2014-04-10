@@ -1,0 +1,6 @@
+---
+layout: default
+title: setup
+---
+
+<img src="/images/_mg_1238.jpg"/>

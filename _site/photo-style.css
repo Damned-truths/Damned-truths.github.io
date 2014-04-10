@@ -1,16 +1,17 @@
-﻿html {
-    background: rgb(0,0,100);
+html {
+    background: rgb(105,105,105);
+    font-family: arial, san-serif;
 }
 /**/
 h1 {
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
 }
 /**/
 #logo {
     max-width: 720px;
     height: 89px;
     padding: 0px;
-    border-radius: 10px;
+    #border-radius: 10px;
     background-image: url("/images/logo.JPG");
 }
 #logo  a {
@@ -27,7 +28,7 @@ h1 {
     text-align: left;
     font-style:italic;
     font-weight: bold;
-    font-family:Arial;
+    font-family:stencil;
 }
 
 #slogan {
@@ -37,7 +38,7 @@ h1 {
     text-align: left;
     font-style:italic;
     font-weight: bold;
-    font-family:Arial;
+    font-family:stencil;
 }
 /**/
 a {
@@ -67,18 +68,6 @@ a:hover {
     /*border-left: 1px solid black;*/
 }
 /**/
-li {
-    list-style:disc;
-}
-
-li li {
-    list-style:disc;
-}
-
-li li li {
-    list-style:disc;
-}
-/**/
 .indent {
     margin-left: 1em;
     margin-bottom: 1em;
@@ -89,8 +78,8 @@ li li li {
     text-align: left;
     margin: 0px auto;
     padding: 2px 10px;
-    background: rgb(120,120,255);
-    border-radius: 0px;
+    background: rgb(81,147,171);
+    border-radius: 10px;
 }
 
 .wrapper + .wrapper {
@@ -150,6 +139,16 @@ li li li {
     text-decoration: none;
     list-style: none;
 }
+
+#frontsublink {
+    font-weight: bold;
+    list-style: none;
+}
+
+#frontsublink:hover{
+    color: black;
+    text-decoration: none;
+}
 /**/
 #frontpage {
     font-size: 18pt;
@@ -174,7 +173,7 @@ figure {
     margin: 0px auto;
     padding: 3px;
     color: grey;
-    border-radius: 0px 0px 10px 10px;
+    #border-radius: 0px 0px 10px 10px;
 }
 
 /*
@@ -201,29 +200,40 @@ figure + figure {
     margin-top:20px;
 }*/
 
-#navpanel {
+.navpanel {
     margin: 0 0.2em;
     padding:0;
-    width:700px;
-    border-radius: 10px 10px 0px 0px;
+    width:130px;
+    border-radius: 10px;
 }
 
-#navpanel li {
-    display:inline;
-    
-}
-
-#navpanel li a {
+.navitem {
     text-decoration:none;
     color: rgb(200,200,200);
-    text-align:center;
-    width: 100px;
-    height: 100px;
+    background-color: rgb(81,147,171);
+    text-align:left;
+    width: inherit;
+    height: 25px;
+    padding: 1px;
+    padding-left: 5px;
+    border-radius: 10px;
+    font-family: arial;
+    font-weight: bold;
+    border: 1px rgb(50,50,50) solid;
 }
 
-#navpanel li a:hover {
-    background:rgb(0,0,250);
-    border-radius: 5px 5px 5px 5px;
+.navitem:hover {
+    text-decoration: none;
+    background-color: rgb(0,0,250);
+    #border-radius: 5px 5px 5px 5px;
+}
+
+.navlink {
+    text-decoration: none;
+}
+
+.navlink:hover {
+    text-decoration: none;
 }
 /**/
 .month {
@@ -236,6 +246,11 @@ figure + figure {
 }
 /**/
 .itemborder {
-    border: 1px solid white;
+    border: 1px white solid;
     border-radius: 5px;
+}
+
+#top {
+    position: fixed;
+    #background-color: rgb(81,147,171);
 }
