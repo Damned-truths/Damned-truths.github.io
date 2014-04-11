@@ -12,7 +12,7 @@ h1 {
     height: 89px;
     padding: 0px;
     #border-radius: 10px;
-    background-image: url("/images/logo.JPG");
+    background-image: url("/assets/images/logo.jpg");
 }
 #logo  a {
     display: block;
@@ -109,7 +109,6 @@ a:hover {
 }
 
 .landscape-photo {
-    cursor: pointer;
 }
 
 /*.landscape-photo:hover, 
@@ -263,7 +262,7 @@ figure + figure {
 }
 
 #poststitle {
-    width: 200px;
+    width: 120px;
     background-color: rgb(81,147,171);
     border-radius: 10px;
     height: 25px;
@@ -274,7 +273,7 @@ figure + figure {
 }
 
 .posts {
-    width: 200px;
+    width: 120px;
     background-color: rgb(81,147,171);
     border-radius: 10px;
     #height: 25px;

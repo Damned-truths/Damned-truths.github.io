@@ -1,11 +1,10 @@
 ---
 layout: maps
-title: Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7 Test 7
+title: Test 7
 ---
 
-hello
-----
 hello world
-![][1]
 
-[1]:http://damned-truths.github.io/orienteering/maps/_posts/NOL2014-rd1-relay-leg1.jpg
+![image][1]
+
+[1]:{{ site.url }}/assets/images/image1.jpg

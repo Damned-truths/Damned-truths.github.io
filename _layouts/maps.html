@@ -14,10 +14,10 @@ layout: default
             class="photo {% if pic.portrait %}portrait{% else %}landscape{% endif %}-photo"
             src="{{ pic.url }}"
             title="{{ pic.caption | replace: '"','&quot;' | strip_html }}" {%comment%}'{%endcomment%} 
-            onclick="toggle_size(event.target)">
+            ><!--onclick="toggle_size(event.target)"-->
         <figcaption>{{ pic.caption }} <a href="#img{{ forloop.index }}">link</a></figcaption>
     </figure>
 {% endfor %}
 
 {{ content }}
-<script src="/resize.js" type="text/javascript"></script>
+<!-- <script src="/resize.js" type="text/javascript"></script> -->
