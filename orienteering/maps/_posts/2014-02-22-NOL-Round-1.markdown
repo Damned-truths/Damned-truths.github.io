@@ -3,6 +3,6 @@ layout: maps
 title: NOL Round 1 2014
 
 pictures:
-    -url: sprint-relay-leg1.jpg
+    - url: sprint-relay-leg1.jpg
 ---
 
