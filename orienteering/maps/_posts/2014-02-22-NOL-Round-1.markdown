@@ -1,8 +1,13 @@
 ---
 layout: maps
-title: NOL Round 1 2014
+title: NOL Round 1 2014, Day 1
 
 pictures:
-    - url: sprint-relay-leg1.jpg
+    - url: NOL_Sprint_Relay_Leg_1_Feb_2014.jpg
+      caption: Sprint Relay Leg 1
+    - url: NOL_Sprint_Relay_Leg_3_Feb_2014.jpg
+      caption: Sprint Relay Leg 2
+    - url: NOL_Sprint_Qualification_Feb_2014.jpg
+      caption: Sprint Qualification Heat A
 ---
 
