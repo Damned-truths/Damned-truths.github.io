@@ -12,7 +12,7 @@ h1 {
     height: 89px;
     padding: 0px;
     #border-radius: 10px;
-    background-image: url("/assets/images/logo.jpg");
+    background-image: url("/assets/images/logo.JPG");
 }
 #logo  a {
     display: block;
@@ -28,7 +28,7 @@ h1 {
     text-align: left;
     font-style:italic;
     font-weight: bold;
-    font-family:stencil;
+    font-family:lucida-handwriting;
 }
 
 #slogan {
@@ -204,7 +204,7 @@ figure + figure {
     position: fixed;
     margin: 0 0.2em;
     padding:0;
-    width:130px;
+    width:200px;
     border-radius: 10px;
 }
 
@@ -226,6 +226,7 @@ figure + figure {
 .navitem:hover {
     text-decoration: none;
     background-color: rgb(0,0,250);
+    margin-left: 5px;
     #border-radius: 5px 5px 5px 5px;
 }
 
@@ -241,7 +242,7 @@ figure + figure {
     color: rgb(200,200,200);
     background-color: rgb(81,147,171);
     text-align:left;
-    width: 112px;
+    width: inherit;
     height: 20px;
     padding: 1px;
     padding-left: 5px;
@@ -254,6 +255,7 @@ figure + figure {
 .subnavitem:hover {
     text-decoration: none;
     background-color: rgb(0,0,250);
+    margin-left: 15px;
 }
 
 .navlink {
@@ -262,6 +264,10 @@ figure + figure {
 
 .navlink:hover {
     text-decoration: none;
+}
+
+.navcontainer {
+    width: 200px;
 }
 /**/
 .month {
@@ -285,7 +291,7 @@ figure + figure {
 
 .posts {
     position: fixed;
-    width: 130px;
+    width: 200px;
 }
 
 .poststitle {
