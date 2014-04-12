@@ -201,6 +201,7 @@ figure + figure {
 }*/
 
 .navpanel {
+    position: fixed;
     margin: 0 0.2em;
     padding:0;
     width:130px;
@@ -214,7 +215,7 @@ figure + figure {
     text-align:left;
     width: inherit;
     height: 25px;
-    padding: 1px;
+    padding: 0px;
     padding-left: 5px;
     border-radius: 10px;
     font-family: arial;
@@ -226,6 +227,33 @@ figure + figure {
     text-decoration: none;
     background-color: rgb(0,0,250);
     #border-radius: 5px 5px 5px 5px;
+}
+
+.navlink {
+    text-decoration: none;
+}
+
+.navlink:hover {
+    text-decoration: none;
+}
+
+.subnavitem {
+    color: rgb(200,200,200);
+    background-color: rgb(81,147,171);
+    text-align:left;
+    width: 112px;
+    height: 20px;
+    padding: 1px;
+    padding-left: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: arial;
+    border: 1px rgb(50,50,50) solid;
+}
+
+.subnavitem:hover {
+    text-decoration: none;
+    background-color: rgb(0,0,250);
 }
 
 .navlink {
@@ -255,14 +283,12 @@ figure + figure {
     #background-color: rgb(81,147,171);
 }
 
-#posts {
+.posts {
     position: fixed;
-    
-    list-style: none;
+    width: 130px;
 }
 
-#poststitle {
-    width: 120px;
+.poststitle {
     background-color: rgb(81,147,171);
     border-radius: 10px;
     height: 25px;
@@ -272,8 +298,7 @@ figure + figure {
     font-weight: bold;
 }
 
-.posts {
-    width: 120px;
+.post {
     background-color: rgb(81,147,171);
     border-radius: 10px;
     #height: 25px;
@@ -281,7 +306,7 @@ figure + figure {
     padding: 1px 1px 1px 5px;
 }
 
-.posts:hover {
+.post:hover {
     background-color: rgb(0,0,250);
     color: rgb(200,200,200);
 }
