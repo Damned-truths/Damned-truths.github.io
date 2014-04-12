@@ -8,7 +8,11 @@ title: Maps
     <span class="date">{{ post.date }}</span>
   </p>
   <div class="content">
-    {{ post.excerpt }}
+    <p>{{ post.excerpt }}</p>
+    <b>Races:</b> <ul>{% for race in post.races %}
+    <li>{{ race }}</li>
+    {% endfor %}
+    </ul>
   </div>
 {% endfor %}
 
