@@ -1,6 +1,11 @@
 ---
 layout: maps
-title: NOL Round 1 2014, Day 1
+title: NOL Round 1 2014, Day 1 (Relay and Qualification)
+date: 2014-02-22 12:00:00
+excerpt: Analysis of my races at the NOLs on the 22nd of February 2014.
+races: 
+    - NOL Round 1 2014 Sprint Relay (legs 1 and 3)
+    - NOL Round 1 2014 Sprint Qualification (Heat A)
 
 pictures:
     - url: NOL_Sprint_Relay_Leg_1_Feb_2014.jpg
