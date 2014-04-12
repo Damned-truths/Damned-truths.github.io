@@ -10,17 +10,24 @@
         
             <a accesskey="0" class="navlink" href="/"><div class="navitem">Home</div></a>
             <a accesskey="1" class="navlink" href="/orienteering/"><div class="navitem">Orienteering</div></a>
+                <a href="/orienteering/maps/"><div class="subnavitem">Maps</div></a>
             <a accesskey="2" class="navlink" href="/photography/"><div class="navitem">Photography</div></a>
+                <a href="/photography/flowers"><div class="subnavitem">Flowers</div></a>
+                <a href="/photography/mushrooms"><div class="subnavitem">Mushrooms</div></a>
+                <a href="/photography/animals"><div class="subnavitem">Animals</div></a>
+                <a href="/photography/landscapes"><div class="subnavitem">Landscapes</div></a>
+                <a href="/photography/portraits"><div class="subnavitem">Portraits</div></a>
             <a accesskey="3" class="navlink" href="/about/"><div class="navitem">About</div></a>
             <a accesskey="4" class="navlink" href="/contact/"><div class="navitem">Contact</div></a>
             <a accesskey="8" class="navlink" href="/accesskeys/"><div class="navitem">Access Keys</div></a>
             <a accesskey="9" class="navlink" href="/sitemap/"><div class="navitem">Sitemap</div></a>
-        <div id="posts">
-            <div id="poststitle">Posts</div>
-                {% for post in site.posts limit:10 %}
-                        <a href="{{ post.url }}"><div class="posts" >{{ post.title }}</div></a>
-                {% endfor %}
+        <div class="posts">
+            <div class="poststitle">Posts</div>
+            {% for post in site.posts %}
+                <a href="{{ post.url }}"><div class="post">{{ post.title }}</div></a>
+            {% endfor %}
         </div>
+        
     </div>
     
     <div class="wrapper" id="logo">

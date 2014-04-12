@@ -10,11 +10,11 @@ layout: default
         {% if pic_parts == "0" %}
             <p>This page currently has no pictures</p>
         {% endif %}
-        <img id="img{{ forloop.index }}" 
+        <a href="/assets/images/{{ pic.url }}"><img id="img{{ forloop.index }}" 
             class="photo {% if pic.portrait %}portrait{% else %}landscape{% endif %}-photo"
             src="/assets/images/{{ pic.url }}"
             title="{{ pic.caption | replace: '"','&quot;' | strip_html }}" {%comment%}'{%endcomment%} 
-            ><!--onclick="toggle_size(event.target)"-->
+            ></a><!--onclick="toggle_size(event.target)"-->
         <figcaption>{{ pic.caption }} <a href="#img{{ forloop.index }}">link</a></figcaption>
     </figure>
 {% endfor %}
