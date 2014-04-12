@@ -17,6 +17,7 @@ layout: default
             ></a><!--onclick="toggle_size(event.target)"-->
         <figcaption>{{ pic.caption }} <a href="#img{{ forloop.index }}">link</a></figcaption>
     </figure>
+    <p>{{ pic.analysis }}</p>
 {% endfor %}
 
 {{ content }}
