@@ -7,19 +7,10 @@ excerpt: Analysis of my races at the NOLs on the 22nd of February 2014.
 races: 
     - NOL Round 1 2014 Sprint Relay (legs 1 and 3)
     - NOL Round 1 2014 Sprint Qualification (Heat A)
-
-pictures:
-    - url: NOL_Sprint_Relay_Leg_1_Feb_2014.jpg
-      caption: Sprint Relay Leg 1
-      analysis: Starting off, in the mass start, I was a bit nervous, after all this was my first NOL event, and I was starting in a mass start, however, I managed to keep it together through the mass start. To #2 I lost focus on navigation and almost crossed an Out of Bounds area, however I recovered quickly enough , but still lost time. I managed to gather my thoughts and navigate #3 cleanly, if a little slowly, I was beginning (already) to feel my physical unpreparedness, having pushed too hard on leg 1, not warmed up sufficiently and lack of training over a long period. The next 2 controls were technically executed without error, but still beginning to feel the unpreparedness. Control 6 began strongly however I hesitated at both of the path junctions within the gardens. Exiting #6 I immediately started down the wrong path, and stopped, wasting more time, eventually finding the correct path on the map and heading off, this time in the correct direction. By this tie I was beginning to feel a stitch coming on. My route choice across the bridge to #7 was probably a bad choice, instead I should have turned left before the bridge and got a flow going out of the control. Control's 8 and 9 were technically very easy, no errors there. To #10 I was really beginning to feel my sides, it was becoming a quite a distraction, slowing down my decision to #11. Hesitation was beginning to become a feature of my run as I hesitated out of control 11. I managed to get in and out of 12 well, with little hesitation. A little hesitation on 13, however my sides were beginning to really hurt. By 14 I was walking. Halfway between 14 and 15 I started to jog again, and by 15 I was at a slow run, but definitely not what I wanted in a sprint, and I was still in pain.
-
-    - url: NOL_Sprint_Relay_Leg_3_Feb_2014.jpg
-      caption: Sprint Relay Leg 2
-      analysis: 
-
-    - url: NOL_Sprint_Qualification_Feb_2014.jpg
-      caption: Sprint Qualification Heat A
-      analysis: 
-
 ---
+<img src="{{ site.url }}/assets/images/NOL_Sprint_Relay_Leg_1_Feb_2014.jpg"/>
+Starting off, in the mass start, I was a bit nervous, after all this was my first NOL event, and I was starting in a mass start, however, I managed to keep it together through the mass start. To #2 I lost focus on navigation and almost crossed an Out of Bounds area, however I recovered quickly enough , but still lost time. I managed to gather my thoughts and navigate #3 cleanly, if a little slowly, I was beginning (already) to feel my physical unpreparedness, having pushed too hard on leg 1, not warmed up sufficiently and lack of training over a long period. The next 2 controls were technically executed without error, but still beginning to feel the unpreparedness. Control 6 began strongly however I hesitated at both of the path junctions within the gardens. Exiting #6 I immediately started down the wrong path, and stopped, wasting more time, eventually finding the correct path on the map and heading off, this time in the correct direction. By this tie I was beginning to feel a stitch coming on. My route choice across the bridge to #7 was probably a bad choice, instead I should have turned left before the bridge and got a flow going out of the control. Control's 8 and 9 were technically very easy, no errors there. To #10 I was really beginning to feel my sides, it was becoming a quite a distraction, slowing down my decision to #11. Hesitation was beginning to become a feature of my run as I hesitated out of control 11. I managed to get in and out of 12 well, with little hesitation. A little hesitation on 13, however my sides were beginning to really hurt. By 14 I was walking. Halfway between 14 and 15 I started to jog again, and by 15 I was at a slow run, but definitely not what I wanted in a sprint, and I was still in pain.
 
+<img src="{{ site.url }}/assets/images/NOL_Sprint_Relay_Leg_3_Feb_2014.jpg"/>
+
+<img src="{{ site.url }}/assets/images/NOL_Sprint_Qualification_Feb_2014.jpg"/>
