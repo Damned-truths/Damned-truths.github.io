@@ -317,3 +317,7 @@ figure + figure {
     color: rgb(200,200,200);
     margin-left: 5px;
 }
+
+.maps-img {
+    max-width:100%;
+}
