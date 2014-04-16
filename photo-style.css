@@ -321,3 +321,35 @@ figure + figure {
 .maps-img {
     max-width:100%;
 }
+
+#links {
+    position:fixed;
+    right: 10px;
+    width: 200px;
+}
+
+#linkstitle{
+    background-color:rgb(81,147,171);
+    height:25px;
+    border-radius:10px;
+    border:1px rgb(50,50,50) solid;
+    padding: 1px 1px 1px 5px;
+    font-weight:bold;
+}
+
+.link {
+    background-color:rgb(81,147,171);
+    width:inherit;
+    min-height:25px;
+    border-radius:10px;
+    border:1px rgb(50,50,50) solid;
+    padding: 1px 1px 1px 5px;
+    font-weight:bold;
+    font-family: arial;
+}
+
+.link:hover {
+    margin-left: 5px;
+    background-color: rgb(0,0,200);
+    color: rgb(200,200,200);
+}
