@@ -1,17 +1,21 @@
 html {
-    background: rgb(105,105,105);
+    background-image: url("/assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-family: arial, san-serif;
 }
+
 /**/
 h1 {
     font-family: Arial, sans-serif;
 }
 /**/
 #logo {
-    max-width: 720px;
+    max-width: 60%;
     height: 89px;
-    padding: 0px;
-    #border-radius: 10px;
+    padding: 8px;
+    border-radius: 20px 20px 0 0;
+    border: 2px rgb(81,147,200) solid;
     background-image: url("/assets/images/logo.JPG");
 }
 #logo  a {
@@ -43,7 +47,7 @@ h1 {
 /**/
 a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    color: rgb(230,230,230);
 }
 
 a:hover {
@@ -75,12 +79,12 @@ a:hover {
 }
 /**/
 .wrapper {
-    max-width: 700px;
+    max-width: 60%;
     text-align: left;
     margin: 0px auto;
     padding: 2px 10px;
-    background: rgb(81,147,171);
-    border-radius: 10px;
+    background: rgb(81,147,200);
+    border-radius: 0px;
 }
 
 .wrapper + .wrapper {
@@ -93,6 +97,7 @@ a:hover {
 
 #wrappercopyright {
     padding: 2px 10px;
+    border-radius: 0 0 20px 20px;
 }
 /**/
 .headerlink {
@@ -169,7 +174,7 @@ figure {
 
 #jekyll {
     text-align:right;
-    max-width: 700px;
+    max-width: 60%;
     margin: 0px auto;
     padding: 3px;
     color: grey;
@@ -201,17 +206,17 @@ figure + figure {
 }*/
 
 .navpanel {
-    position: fixed;
+    //position: fixed;
     margin: 0 0.2em;
     padding:0;
-    width:200px;
+    width:15%;
     border-radius: 10px;
 }
 
 .navitem {
     text-decoration:none;
     color: rgb(200,200,200);
-    background-color: rgb(81,147,171);
+    background-color: rgb(81,147,200);
     text-align:left;
     width: inherit;
     height: 25px;
@@ -240,7 +245,7 @@ figure + figure {
 
 .subnavitem {
     color: rgb(200,200,200);
-    background-color: rgb(81,147,171);
+    background-color: rgb(81,147,200);
     text-align:left;
     width: inherit;
     height: 20px;
@@ -267,7 +272,7 @@ figure + figure {
 }
 
 .navcontainer {
-    width: 200px;
+    width: 100%;
 }
 /**/
 .month {
@@ -286,16 +291,16 @@ figure + figure {
 
 #top {
     position: fixed;
-    #background-color: rgb(81,147,171);
+    #background-color: rgb(81,147,200);
 }
 
 .posts {
     position: fixed;
-    width: 200px;
+    width: 15%;
 }
 
 .poststitle {
-    background-color: rgb(81,147,171);
+    background-color: rgb(81,147,200);
     border-radius: 10px;
     height: 25px;
     margin-top: 5px;
@@ -305,7 +310,7 @@ figure + figure {
 }
 
 .post {
-    background-color: rgb(81,147,171);
+    background-color: rgb(81,147,200);
     border-radius: 10px;
     #height: 25px;
     border: 1px rgb(50,50,50) solid;
@@ -325,11 +330,11 @@ figure + figure {
 #links {
     position:fixed;
     right: 10px;
-    width: 200px;
+    width: 15%;
 }
 
 #linkstitle{
-    background-color:rgb(81,147,171);
+    background-color:rgb(81,147,200);
     height:25px;
     border-radius:10px;
     border:1px rgb(50,50,50) solid;
@@ -338,7 +343,7 @@ figure + figure {
 }
 
 .link {
-    background-color:rgb(81,147,171);
+    background-color:rgb(81,147,200);
     width:inherit;
     min-height:25px;
     border-radius:10px;
