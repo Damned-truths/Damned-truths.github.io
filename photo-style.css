@@ -2,6 +2,7 @@ html {
     background-image: url("/assets/images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed;
     font-family: arial, san-serif;
 }
 
@@ -47,7 +48,7 @@ h1 {
 /**/
 a {
     text-decoration: none;
-    color: rgb(230,230,230);
+    color: rgb(200,200,200);
 }
 
 a:hover {
@@ -177,8 +178,15 @@ figure {
     max-width: 60%;
     margin: 0px auto;
     padding: 3px;
-    color: grey;
     #border-radius: 0px 0px 10px 10px;
+}
+
+#jekyll a{
+    color: rgb(200,0,0);
+}
+
+#jekyll a:hover{
+    color: black;
 }
 
 /*
