@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }} | Damned Truths</title>
+    <link href="/photo-style.css" rel="stylesheet" type="text/css" media="all">  
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta http-equiv="refresh" content"5; url=/404.html">
+</head>
+<body>
+    <div id="top" class="navpanel">
+        
+            <a accesskey="0" class="navlink" href="/"><div class="navitem">Home</div></a>
+            <div class="navcontainer"><a accesskey="1" class="navlink" href="/orienteering/"><div class="navitem">Orienteering</div></a>
+                <a href="/orienteering/maps/"><div class="subnavitem">Maps</div></a></div>
+            <div class="navcontainer"><a accesskey="2" class="navlink" href="/photography/"><div class="navitem">Photography</div></a>
+                <a href="/photography/flowers"><div class="subnavitem">Flowers</div></a>
+                <a href="/photography/mushrooms"><div class="subnavitem">Mushrooms</div></a>
+                <a href="/photography/animals"><div class="subnavitem">Animals</div></a>
+                <a href="/photography/landscapes"><div class="subnavitem">Landscapes</div></a>
+                <!--<a href="/photography/portraits"><div class="subnavitem">Portraits</div></a>--></div>
+            <a accesskey="3" class="navlink" href="/about/"><div class="navitem">About</div></a>
+            <a accesskey="4" class="navlink" href="/contact/"><div class="navitem">Contact</div></a>
+            <a accesskey="8" class="navlink" href="/accesskeys/"><div class="navitem">Access Keys</div></a>
+            <a accesskey="9" class="navlink" href="/sitemap/"><div class="navitem">Sitemap</div></a>
+        <div class="posts">
+            <div class="poststitle">Posts</div>
+            {% for post in site.posts %}
+                <a href="{{ post.url }}"><div class="post">{{ post.title }}</div></a>
+            {% endfor %}
+        </div>
+        
+    </div>
+    
+    <div id="links">
+        <div id="linkstitle">Links</div>
+        <a href="http:///www.orienteering.org"><div id="IOF" class="link">International Orienteering Federation</div></a>
+        <a href="http://orienteering.asn.au/"><div id="OA" class="link">Orienteering Australia</div>
+        <a href="http://onsw.asn.au/"><div id="ONSW" class="link">Orienteering NSW</div></a>
+        <a href="http://photo.stackexchange.com/"><div class="link">Photography StackExchange</div></a>
+    </div>
+    
+    <div class="wrapper" id="logo">
+        <a href="/"><p id="slogan">Because What is True?</p>
+        <p id="maintitle">Damned Truths</p></a>
+    </div>
+    <div id="wrapperbreadcrumbs" class="wrapper">
+    <!--{% capture url_parts %} {{ page.url | remove: "/index.html" | remove: ".html" | replace:'/'," " }}{% endcapture %}
+{% capture num_parts %}{{ url_parts | number_of_words }}{% endcapture %}
+{% assign previous="" %}
+<ul class="breadcrumbs">You are here:
+ {% if num_parts == "0" or num_parts == "-1" %}
+  <li><a href="/">home</a> &#187; </li>
+ {% else %}
+  <li><a href="/">home</a> &#187; </li>
+
+  {% for unused in site.breadcrumb_list limit:num_parts %}
+   {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
+   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+
+   <li><a href="{{previous}}">{{ first_word }}</a> &#187; </li>
+
+   {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+  {% endfor %}
+ {% endif %}-->
+ 	<span>You are Here:</span>
+	<span>
+            {% capture url_parts %}{{ page.url | replace:'/'," " }}{% endcapture %}
+            {% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
+            {% assign previous="" %}
+            {% if num_parts == "0" or num_parts == "-1" %}
+              <a href="/{{ page.url }}">{{ page.title }}</a> &nbsp;
+            {% else %}
+              <a href="/">Home</a> &#187;
+              {% for unused in site.breadcrumb_list limit:num_parts %}
+                {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
+                {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+                <a href="{{previous}}">{{ first_word | capitalize}}</a> {% unless forloop.last %}&#187;{% endunless %}
+                {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+              {% endfor %}
+            {% endif %}
+          </span>
+ 
+</ul>
+    </div>
+    <div id="wrapper" class="wrapper" style="text-align:center;">
+        <h1 class="title">{{ page.title }}</h1>
+        {{ content }}
+    </div>
+	 <!-- <div class="wrapper">
+ <a href="http://stackexchange.com/users/1614642/damned-truths"><img src="http://stackexchange.com/users/flair/1614642.png" width="208" height="58" alt="profile for damned truths on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for damned truths on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
+ </div> -->
+    <div class="wrapper" id="wrappercopyright">
+        <div>&#169; Copyright 2014 Toben Wilson - All Rights Reserved</div>
+    </div>
+    <div id="jekyll">built with <a href="http://jekyllrb.com/">Jekyll</a>. Hosted with <a href="http://www.github.com">Github</a>.</div>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50114054-1', 'damned-truths.github.io');
+  ga('send', 'pageview');
+
+    </script>
+</html>
