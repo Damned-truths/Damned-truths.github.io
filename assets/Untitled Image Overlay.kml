@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>Untitled Image Overlay</name>
+	<color>6effffff</color>
+	<Icon>
+		<href>D:/Toby/Downloads/Pittwater-map.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<gx:LatLonQuad>
+		<coordinates>
+			147.5434596136113,-42.83898552347238,0 147.6100921030085,-42.85375536947526,0 147.6211718932143,-42.83212944835978,0 147.5507715821056,-42.81837119978952,0 
+		</coordinates>
+	</gx:LatLonQuad>
+</GroundOverlay>
+</kml>
