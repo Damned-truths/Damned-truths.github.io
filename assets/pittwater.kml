@@ -4,7 +4,7 @@
 	<name>Untitled Image Overlay</name>
 	<color>6effffff</color>
 	<Icon>
-		<href>D:/Toby/Downloads/Pittwater-map.png</href>
+		<href>http://damned-truths.github.io/assets/images/pittwater-map.png</href>
 		<viewBoundScale>0.75</viewBoundScale>
 	</Icon>
 	<gx:LatLonQuad>
