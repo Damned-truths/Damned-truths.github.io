@@ -40,6 +40,7 @@
         <script src="data/Park_3.js"></script>
         <script src="data/Street_4.js"></script>
         <script>
+        layer: L.featureGroup([UrbanBush_0,Street_4,Sprint_1,Forest_2,Park_3]);
         var highlightLayer;
         function highlightFeature(e) {
             highlightLayer = e.target;
@@ -69,24 +70,82 @@
         basemap0.addTo(map);
         function setBounds() {
         }
-        function pop_UrbanBush_0(feature, layer) {
+                function pop_layer(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
                         e.target._eventParents[i].resetStyle(e.target);
                     }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
                 },
                 mouseover: highlightFeature,
             });
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? Autolinker.link(String(feature.properties['id'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['MapName'] !== null ? Autolinker.link(String(feature.properties['MapName'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Scale</th>\
+                        <td>1:' + (feature.properties['Scale'] !== null ? Autolinker.link(String(feature.properties['Scale'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Contours</th>\
+                        <td>' + (feature.properties['ContourInt'] !== null ? Autolinker.link(String(feature.properties['ContourInt'])) : '') + 'm</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Last Use</th>\
+                        <td>' + (feature.properties['LastUse'] !== null ? Autolinker.link(String(feature.properties['LastUse'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Creation</th>\
+                        <td>' + (feature.properties['Creation'] !== null ? Autolinker.link(String(feature.properties['Creation'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">First Use</th>\
+                        <td>' + (feature.properties['FirstUse'] !== null ? Autolinker.link(String(feature.properties['FirstUse'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Map Type</th>\
+                        <td>' + (feature.properties['MapType'] !== null ? Autolinker.link(String(feature.properties['MapType'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Terrain</th>\
+                        <td>' + (feature.properties['Terrain'] !== null ? Autolinker.link(String(feature.properties['Terrain'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Spec</th>\
+                        <td>' + (feature.properties['Spec'] !== null ? Autolinker.link(String(feature.properties['Spec'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Club</th>\
+                        <td>' + (feature.properties['Club'] !== null ? Autolinker.link(String(feature.properties['Club'])) : '') + '</td>\
+                    </tr>\
+                        <th scope="row">Eventor Club Id</th>\
+                        <td>' + (feature.properties['ClubId'] !== null ? Autolinker.link(String(feature.properties['ClubId'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Mapper/s</th>\
+                        <td>' + (feature.properties['Mapper'] !== null ? Autolinker.link(String(feature.properties['Mapper'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Land Owner</th>\
+                        <td>' + (feature.properties['LandOwner'] !== null ? Autolinker.link(String(feature.properties['LandOwner'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Last Update</th>\
+                        <td>' + (feature.properties['LastUpdate'] !== null ? Autolinker.link(String(feature.properties['LastUpdate'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                    <tr>\
+                        <th scope="row">Area</th>\
+                        <td>' + (feature.properties['Area'] !== null ? Autolinker.link(String(feature.properties['Area'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxWidth: 900});
         }
-        layer: L.featureGroup([UrbanBush,Street,Sprint,Forest,Park]);
+        
         function style_UrbanBush_0_0() {
             return {
                 pane: 'pane_UrbanBush_0',
