@@ -160,8 +160,7 @@
                 });
 
 
-        var mapTypes = L.layerGroup([layer_forest,layer_park]).addTo(map);
-            bounds_group.addLayer(mapTypes);
+        var mapTypes = L.layerGroup([layer_forest,layer_park]).addTo(map).addTo(bounds_group);
 
 
         var osmGeocoder = new L.Control.OSMGeocoder({
