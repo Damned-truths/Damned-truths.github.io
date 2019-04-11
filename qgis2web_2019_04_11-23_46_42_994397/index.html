@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+        <style>
+        #map {
+            width: 1141px;
+            height: 851px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet.wms.js"></script>
+        <script src="js/leaflet-tilelayer-wmts.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[-35.74938156390801,150.03753339842933],[-35.553021966609265,150.35500088296072]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+        });
+        layer_OSMStandard_0;
+        map.addLayer(layer_OSMStandard_0);
+        var layer_public_NSW_Base_Map_1 = L.tileLayer.wmts('http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/WMTS?', {
+            layer: 'public_NSW_Base_Map',
+            tilematrixSet: 'default028mm',
+            format: 'image/png',
+            style: 'default',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            opacity: 1.0,
+            attribution: '<a href="http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services/terms_and_conditions">© Department Finance, Services & Innovation, CC-BY 3.0</a>',
+        });
+        map.addLayer(layer_public_NSW_Base_Map_1);
+        var layer_BestImageryDates_2 = L.WMS.layer("http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Imagery/MapServer/WmsServer?", "0", {
+            format: 'image/jpeg',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            attribution: '<a href="http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services/terms_and_conditions">© Department Finance, Services & Innovation, CC-BY 3.0</a>',
+        });
+        map.addLayer(layer_BestImageryDates_2);
+        var img_merged_depr_resize_3 = 'data/merged_depr_resize_3.png';
+        var img_bounds_merged_depr_resize_3 = [[-35.71676287638947,150.10384446954706],[-35.62308243208511,150.2615226770452]];
+        var layer_merged_depr_resize_3 = new L.imageOverlay(img_merged_depr_resize_3, img_bounds_merged_depr_resize_3);
+        bounds_group.addLayer(layer_merged_depr_resize_3);
+        map.addLayer(layer_merged_depr_resize_3);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{"merged_depr_resize": layer_merged_depr_resize_3,"BestImageryDates": layer_BestImageryDates_2,"public_NSW_Base_Map": layer_public_NSW_Base_Map_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
+        setBounds();
+        L.ImageOverlay.include({
+            getBounds: function () {
+                return this._bounds;
+            }
+        });
+        </script>
+    </body>
+</html>
