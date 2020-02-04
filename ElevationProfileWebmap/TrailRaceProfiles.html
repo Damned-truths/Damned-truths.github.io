@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trail Race Profile Map</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <style>
+    html,
+    body,
+    #map,
+    #elevation-div {
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      position: relative;
+      z-index: 9999;
+    }
+
+    #elevation-div { overflow: visible; }
+    #map {
+      height: 75%;
+      position: relative;
+      z-index: 1;
+    }
+
+    #elevation-div {
+      height: 25%;
+      font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+    .data-summary {
+      font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      position: absolute;
+      bottom: 0;
+      left: 45px;
+    }
+
+    .data-summary .summaryvalue {
+      font-weight: bold;
+    }
+
+  </style>
+  <style>
+   .custom-theme.leaflet-control.elevation .area {
+    fill: #6f0e0e;
+    stroke: hsla(60, 0%, 0%, 0.85);
+    stroke-width: 2.5;
+   }
+
+   .custom-theme.height-focus.circle-lower {
+     fill: #0e0e6f;
+   }
+
+   .custom-theme.elevation-polyline {
+     stroke: #6f0e0e;
+     stroke-opacity: 0.75 ;
+   }
+ </style>
+</head>
+
+<iframe src="Extralong.html" width="45%" height="45%"></iframe>
+<iframe src="Long.html" width="45%" height="45%"></iframe><br/>
+<iframe src="Medium.html" width="45%" height="45%"></iframe>
+<iframe src="Short.html" width="45%" height="45%"></iframe>
+<iframe src="BoroniaToPennantHillsPark.html" width="45%" height="45%"></iframe>
+
+</body>
+
+</html>
